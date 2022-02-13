@@ -14,16 +14,10 @@ try {
   const { context } = github
   const octokit = github.getOctokit(GITHUB_TOKEN)
 
-  const listReleasesResponse = await octokit.rest.repos.listReleases({
+  const { data: releases } = await octokit.rest.repos.listReleases({
     ...context.repo,
     per_page: 10,
   })
-
-  if (listReleasesResponse.status !== 200) {
-    throw new Error(`Received a non-200 status code while listing releases: ${listReleasesResponse.status}.`)
-  }
-
-  const releases = listReleasesResponse.data
 
   if (releases.length === 0) {
     core.info('No release available.')
