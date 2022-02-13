@@ -1,5 +1,9 @@
 name: Publish Latest Release
 description: Publish the latest drafted repository release available.
+author: Ivan Gabriele
+branding:
+  color: yellow
+  icon: globe
 
 runs:
   using: node16
