@@ -1,6 +1,6 @@
 # publish-latest-release
 
-> This action publishes the last drafted release for the current repository (if there is one).
+> This action publishes the latest drafted release available.
 
 ⚠️ **This action won't fail if there is none.**
 
