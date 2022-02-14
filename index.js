@@ -20,14 +20,14 @@ try {
   })
 
   if (releases.length === 0) {
-    core.info('No release available.')
+    core.info('No draft release available.')
 
     process.exit(0)
   }
 
   const maybeDrafRelease = releases.find(({ draft }) => draft === true)
   if (maybeDrafRelease === undefined) {
-    core.info('No release available.')
+    core.info('No draft release available among the last 10 ones.')
 
     process.exit(0)
   }
