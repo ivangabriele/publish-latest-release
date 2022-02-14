@@ -6,6 +6,9 @@
   "private": true,
   "type": "module",
   "main": "./index.js",
+  "scripts": {
+    "postversion": "git push origin main --tags"
+  },
   "dependencies": {
     "@actions/core": "1.6.0",
     "@actions/github": "5.0.0"
