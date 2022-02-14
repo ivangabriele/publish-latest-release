@@ -5,8 +5,9 @@
   "version": "1.1.0",
   "private": true,
   "type": "module",
-  "main": "./index.js",
+  "main": "./index.dist.js",
   "scripts": {
+    "build": "rollup -c",
     "postversion": "git push origin main --tags"
   },
   "dependencies": {
@@ -15,7 +16,11 @@
   },
   "devDependencies": {
     "@ivangabriele/prettier-config": "3.0.2",
-    "prettier": "2.5.1"
+    "@rollup/plugin-commonjs": "21.0.1",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "13.1.3",
+    "prettier": "2.5.1",
+    "rollup": "2.67.2"
   },
   "prettier": "@ivangabriele/prettier-config"
 }
