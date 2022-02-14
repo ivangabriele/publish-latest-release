@@ -2,7 +2,7 @@
   "name": "publish-latest-release",
   "description": "Github Action publishing the latest drafted repository release available.",
   "license": "MIT",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "main": "./index.js",
