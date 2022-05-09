@@ -11,16 +11,16 @@
     "postversion": "git push origin main --tags"
   },
   "dependencies": {
-    "@actions/core": "1.7.0",
+    "@actions/core": "1.8.0",
     "@actions/github": "5.0.1"
   },
   "devDependencies": {
     "@ivangabriele/prettier-config": "3.0.2",
     "@rollup/plugin-commonjs": "21.1.0",
     "@rollup/plugin-json": "4.1.0",
-    "@rollup/plugin-node-resolve": "13.2.1",
+    "@rollup/plugin-node-resolve": "13.3.0",
     "prettier": "2.6.2",
-    "rollup": "2.71.1"
+    "rollup": "2.72.1"
   },
   "prettier": "@ivangabriele/prettier-config"
 }
